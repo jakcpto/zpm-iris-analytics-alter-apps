@@ -1,23 +1,195 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>DeepSeeWeb</title>
     <base href="">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, height=device-height"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, height=device-height" />
     <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
     <link rel="apple-touch-icon" sizes="512x512" href="assets/img/logo.png">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#1976d2">
 
-<link rel="stylesheet" href="styles.8ae27f1ef2eed7b32042.css"></head>
+    <!--
+    <link rel="stylesheet" href="styles.8ae27f1ef2eed7b32042.css">
+    -->
+    
+    <style type="text/css">
+        .tabs {
+            width: 100%;
+            padding: 0px;
+            margin: 0 auto;
+        }
+
+        .tabs>input {
+            display: none;
+        }
+
+        .tabs>div {
+            display: none;
+            border: 1px solid #C0C0C0;
+            background: #FFFFFF;
+        }
+
+        .tabs>label {
+            display: inline-block;
+            padding: 7px;
+            margin: 0 -5px -1px 0;
+            text-align: center;
+            color: #666666;
+            border: 1px solid #C0C0C0;
+            background: #E0E0E0;
+            cursor: pointer;
+        }
+
+        .tabs>input:checked+label {
+            color: #000000;
+            border: 1px solid #C0C0C0;
+            border-bottom: 1px solid #FFFFFF;
+            background: #FFFFFF;
+        }
+
+        #tab1:checked~#txt1,
+        #tab2:checked~#txt2,
+        #tab3:checked~#txt3 {
+            display: block;
+        }
+    </style>
+
+</head>
+
 <body>
     <h3 style="margin-left: 40px">ZPM-Tableau</h3>
-    <p style="margin-left: 10px">Monthly</p>
-    <div class='tableauPlaceholder' id='viz1635443890884' style='position: relative'><noscript><a href='#'><img alt='Monthly ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Monthly_16321309867580&#47;Monthly&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Monthly_16321309867580&#47;Monthly' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Monthly_16321309867580&#47;Monthly&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div><script type='text/javascript'>var divElement = document.getElementById('viz1635443890884');var vizElement = divElement.getElementsByTagName('object')[0];if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1600px';vizElement.style.height='1827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1600px';vizElement.style.height='1827px';} else { vizElement.style.width='100%';vizElement.style.height='2477px';}var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-    <p style="margin-left: 10px">Geography</p>
-    <div class='tableauPlaceholder' id='viz1635444000297' style='position: relative'><noscript><a href='#'><img alt='Geography ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;Geography_16321327628610&#47;Geography&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Geography_16321327628610&#47;Geography' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;Geography_16321327628610&#47;Geography&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div><script type='text/javascript'>var divElement = document.getElementById('viz1635444000297');var vizElement = divElement.getElementsByTagName('object')[0];if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1600px';vizElement.style.height='1227px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1600px';vizElement.style.height='1227px';} else { vizElement.style.width='100%';vizElement.style.height='1527px';}var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-    <p style="margin-left: 10px">Overview</p>
-    <div class='tableauPlaceholder' id='viz1635444075389' style='position: relative'><noscript><a href='#'><img alt='Overview ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;Overview_16321312762060&#47;Overview&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Overview_16321312762060&#47;Overview' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;Overview_16321312762060&#47;Overview&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div><script type='text/javascript'>var divElement = document.getElementById('viz1635444075389');var vizElement = divElement.getElementsByTagName('object')[0];if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='1027px';} else { vizElement.style.width='100%';vizElement.style.height='2827px';}var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>    
+
+    <div class="tabs">
+        <input type="radio" name="inset" value="" id="tab1" checked>
+        <label for="tab1">Monthly</label>
+
+        <input type="radio" name="inset" value="" id="tab2">
+        <label for="tab2">Geography</label>
+
+        <input type="radio" name="inset" value="" id="tab3">
+        <label for="tab3">Overview</label>
+
+        <div id="txt1">
+            <div class='tableauPlaceholder' id='viz1635443890884' style='position: relative'>
+                <noscript><a href='#'><img alt='Monthly '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Monthly_16321309867580&#47;Monthly&#47;1_rss.png'
+                            style='border: none' /></a></noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Monthly_16321309867580&#47;Monthly' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;Monthly_16321309867580&#47;Monthly&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' /></object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1635443890884');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '1900px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '1900px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '2477px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+
+        <div id="txt2">
+            <div class='tableauPlaceholder' id='viz1635444000297' style='position: relative'><noscript><a href='#'><img
+                            alt='Geography '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;Geography_16321327628610&#47;Geography&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Geography_16321327628610&#47;Geography' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ge&#47;Geography_16321327628610&#47;Geography&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' /></object></div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1635444000297');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '1600px';
+                    vizElement.style.height = '1227px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '1600px';
+                    vizElement.style.height = '1227px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '1527px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+
+        <div id="txt3">
+            <div class='tableauPlaceholder' id='viz1635444075389' style='position: relative'><noscript><a href='#'><img
+                            alt='Overview '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;Overview_16321312762060&#47;Overview&#47;1_rss.png'
+                            style='border: none' /></a></noscript><object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='Overview_16321312762060&#47;Overview' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ov&#47;Overview_16321312762060&#47;Overview&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' /></object></div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1635444075389');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '1366px';
+                    vizElement.style.height = '1027px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '1366px';
+                    vizElement.style.height = '1027px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '2827px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
