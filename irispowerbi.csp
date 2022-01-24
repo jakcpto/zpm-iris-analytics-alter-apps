@@ -16,7 +16,7 @@
     -->
 </head>
 
-<body>
+<body style="height: 93vh;">
     <h3 style="margin-left: 40px">ZPM-IRIS-Analytics (without Atscale)</h3>
     <iframe title="ZpmAnalyticsIRIS - Geography" width="100%" height="100%"
         src="https://app.powerbi.com/view?r=eyJrIjoiZjgzZTYxZTYtYzVmOC00M2YzLThmODItNjg0YWVhNjA2NmM5IiwidCI6ImMwNDU1OGJhLWJiMzgtNDQzMC1iMDhkLThlMTYxMmQzY2NkOCIsImMiOjl9&pageName=ReportSection"
