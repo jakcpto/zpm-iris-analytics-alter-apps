@@ -10,9 +10,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- CSS Initialization -->
-        <link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="app/css/custom.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
+
+    <style>
+        .oauth-link{
+            width: 100%;
+            display: block;
+            padding: 6px;
+            text-align: center;
+        }
+    </style>
 
     <body>
         <div class="login-form" style="width: 340px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
@@ -30,6 +38,8 @@
                 <div class="form-group">
                     <button type="submit" class="btn btn-primary btn-block">Log in</button>
                 </div>
+
+                <a class="oauth-link border border-primary rounded" href="dswoauth/auth">OAuth sign in</a>
             </form>
 
             #($select( ($Get(%request.Data("Error:ErrorCode",1))'="")&&($$$GETERRORCODE($Get(%request.Data("Error:ErrorCode",1)))'=$$$ERRORCODE($$$RequireAuthentication)): "<div class=""ui error message visible"">Неверные имя пользователя или пароль</div>", 1:"") )#
