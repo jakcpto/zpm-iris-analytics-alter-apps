@@ -38,14 +38,14 @@
                     <button type="submit" class="btn btn-primary btn-block">Log in</button>
                 </div>
 
-                <a class="oauth-link border border-primary rounded" href="dswoauth/auth">OAuth sign in</a>
+                <a class="oauth-link border border-primary rounded" href="../../dsw/dswoauth/auth">OAuth sign in</a>
             </form>
 
-            #($select( ($Get(%request.Data("Error:ErrorCode",1))'="")&&($$$GETERRORCODE($Get(%request.Data("Error:ErrorCode",1)))'=$$$ERRORCODE($$$RequireAuthentication)): "<div class=""ui error message visible"">Неверные имя пользователя или пароль</div>", 1:"") )#
+            #($SELECT( ($GET(%request.Data("Error:ErrorCode",1))'="")&&($$$GETERRORCODE($GET(%request.Data("Error:ErrorCode",1)))'=$$$ERRORCODE($$$RequireAuthentication)): "<div class=""ui error message visible"">Неверные имя пользователя или пароль</div>", 1:"") )#
         </div>
 
         <script>
-            if (window.history.replaceState) {
+            If (window.history.replaceState) {
                 window.history.replaceState(null, null, window.location.href);
             }
         </script>
