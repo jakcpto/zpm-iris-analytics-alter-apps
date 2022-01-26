@@ -9,9 +9,13 @@ XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 </Routes>
 }
 
-Parameter REDIRECTURI = "https://$$$HOSTNAME/zpmoauth/auth";
+Parameter APPLICATION = "azpm";
 
-Parameter AUTHAPPURL = "https://$$$HOSTNAME/zpm/tableau.csp";
+Parameter REDIRECTURI = "https://pm.community.intersystems.com/zpmoauth/auth";
+
+Parameter AUTHAPPURL = "https://pm.community.intersystems.com/zpm/tableau.csp";
+
+parameter SCOPE = "openid profile email";
 
 Parameter UseSession = 1;
 
