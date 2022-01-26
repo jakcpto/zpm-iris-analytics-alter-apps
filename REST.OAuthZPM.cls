@@ -9,8 +9,6 @@ XData UrlMap [ XMLNamespace = "http://www.intersystems.com/urlmap" ]
 </Routes>
 }
 
-Parameter APPLICATION = "$$$APPNAME";
-
 Parameter REDIRECTURI = "https://$$$HOSTNAME/zpmoauth/auth";
 
 Parameter AUTHAPPURL = "https://$$$HOSTNAME/zpm/tableau.csp";
