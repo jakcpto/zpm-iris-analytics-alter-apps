@@ -40,6 +40,9 @@
 
                 <a class="oauth-link border border-primary rounded" href="./zpmoauth/auth">OAuth sign in</a>
             </form>
+            
+            #($SELECT( ($GET(%request.Data("Error:ErrorCode",1))'="")&&($$$GETERRORCODE($GET(%request.Data("Error:ErrorCode",1)))'=$$$ERRORCODE($$$RequireAuthentication)): "<div class=""ui error message visible"">Неверные имя пользователя или пароль</div>", 1:"") )#
+            
         </div>
 
         <script>
