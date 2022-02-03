@@ -31,6 +31,7 @@ ClassMethod auth()
     	.error)
     	
     if isAuthorized {
+		set success = $SYSTEM.Security.Login(.accessToken)
 		&html<<script type="text/javascript"> window.location="#(..#AUTHAPPURL)#" </script>>
 		return $$$OK
 	} 
