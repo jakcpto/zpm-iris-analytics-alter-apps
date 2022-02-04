@@ -1,55 +1,28 @@
-<CSP:CLASS INCLUDES="%sqlui, %sySecurity, %sySystem"/>
 <!doctype html>
 
 <html>
     <head>
-        <title>Ensemble Workflow</title>
-
+        <title>ZPM Analytics Sign-in</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSS Initialization -->
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     </head>
 
     <style>
         .oauth-link{
             width: 100%;
-            display: block;
-            padding: 6px;
-            text-align: center;
         }
     </style>
 
     <body>
         <div class="login-form" style="width: 340px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-            <form name="Login" method="post" action="#" style="background: #f7f7f7; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); padding: 30px; border-radius: 3px">
-                <h2 class="text-center">Please log in</h2>
+            <div name="Login" method="post" action="#" style="background: #f7f7f7; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); padding: 30px; border-radius: 3px">
+                <h5 class="text-center" style="margin-bottom: 18px;">ZPM Analytics Sign-in</h5>
 
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Username" name="CacheUserName">
-                </div>
-
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password"  name="CachePassword">
-                </div>
-
-                <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block">Log in</button>
-                </div>
-
-                <a class="oauth-link border border-primary rounded" href="./zpmoauth/auth">OAuth sign in</a>
-            </form>
-            
-            #($SELECT( ($GET(%request.Data("Error:ErrorCode",1))'="")&&($$$GETERRORCODE($GET(%request.Data("Error:ErrorCode",1)))'=$$$ERRORCODE($$$RequireAuthentication)): "<div class=""ui error message visible"">Неверные имя пользователя или пароль</div>", 1:"") )#
-            
+                <a class="oauth-link btn btn-primary" href="./zpmoauth/auth">OAuth sign in</a>
+            </div>
         </div>
-
-        <script>
-            If (window.history.replaceState) {
-                window.history.replaceState(null, null, window.location.href);
-            }
-        </script>
     </body>
 
 </html>
